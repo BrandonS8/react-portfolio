@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
-
+import './Projects.css'
 class Projects extends Component {
   render () {
     return (
-      <div><h1>Projects</h1></div>
+      <div className='projectsContainer'>
+        <h1 className='projectsHeading'>Projects</h1>
+        <div className='projects' />
+      </div>
     )
   }
 }
