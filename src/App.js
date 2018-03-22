@@ -27,7 +27,7 @@ class App extends Component {
           <Switch>
             <Route path='/contact' render={() => <Contact />} />
             <Route path='/about' render={() => <About />} />
-            <Route path='/projects' render={() => <Projects />} />
+            <Route path='/projects' render={(props) => <Projects {...props} />} />
             {/* make sure these are in order  */}
             <Route path='/' render={() => <Home />} />
           </Switch>

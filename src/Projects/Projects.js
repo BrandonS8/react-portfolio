@@ -19,7 +19,7 @@ class Projects extends Component {
       <div className='projectsContainer'>
         <h1 className='projectsHeading'>Projects</h1>
         <div className='projects' />
-        <ArrowNav links={projectLinks} />
+        <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
       </div>
     )
   }
