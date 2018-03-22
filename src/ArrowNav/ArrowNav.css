@@ -1,0 +1,16 @@
+.arrowNavContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.arrowNavLink{
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin: 3px;
+}
+.arrowNavLink:hover {
+  text-decoration:none; 
+  color:#fff; 
+}
