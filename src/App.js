@@ -20,13 +20,7 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <nav>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/projects'>Projects</NavLink>
-          <NavLink to='/about'>About</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
-        </nav>
+      <div className='app'>
         <main>
           <Switch>
             <Route path='/projects' render={() => <Projects />} />
@@ -34,6 +28,12 @@ class App extends Component {
             <Route path='/' render={() => <Home />} />
           </Switch>
         </main>
+        <nav>
+          <NavLink exact to='/' activeClassName='currentPage'>Home</NavLink>
+          <NavLink to='/projects' activeClassName='currentPage'>Projects</NavLink>
+          <NavLink to='/about' activeClassName='currentPage'>About</NavLink>
+          <NavLink to='/contact' activeClassName='currentPage'>Contact</NavLink>
+        </nav>
         <ParticlesBackground />
       </div>
     )

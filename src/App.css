@@ -1,4 +1,30 @@
-body{
-  background: #181818;
-}
 /* http://paletton.com/palette.php?uid=13w050k0-5-3vuNq3qsgz4rp63R */
+.app{
+  height: 100%;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+nav{
+  text-align: center;
+}
+nav a{
+  margin: 5px 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #555;
+}
+nav a:hover {
+  text-decoration:none; 
+  color:#fff; 
+  border-bottom: 1px solid #BA68C8;
+}
+.currentPage{
+  transition: ease-in-out 0.5s;
+  border-bottom: 1px solid #d32f2f;
+}
