@@ -1,0 +1,51 @@
+.projectContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  background: #fff;
+  box-shadow: 9px 11px 19px -10px rgba(30,136,229,0.7);
+  border-radius: 15px;
+  max-width: 550px;
+}
+.projectHeading{
+  margin: 3px;
+}
+.projectImg{
+  max-width: 500px;
+  border-radius: 6px;
+  border: 1px solid #1E88E5;
+}
+.projectDesc{
+  padding: 0 10px;
+  margin: 5px;
+  text-align: center;
+}
+.projectTechnologies{
+  display: flex;
+  text-align: center;
+  margin: 0;
+}
+.projectTech{
+  padding: 4px;
+  margin: 6px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
+}
+.projectButtons{
+  margin: 15px;
+}
+.projectButton{
+  margin: 0 10px;
+  border-bottom: 1px solid #d32f2f;
+  font-size: 25px;
+  text-decoration: none;
+  color: #555;
+  user-select: none;
+}
+.projectButton:hover{
+  text-decoration:none; 
+  color:#555; 
+  border-bottom: 1px solid #1E88E5;
+}

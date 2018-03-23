@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import './ArrowNav.css'
 class ArrowNav extends Component {
   render () {
-    console.log(this.props.currentPath)
     return (
       <div className='arrowNavContainer'>
         {this.props.links.map((link, i) => {

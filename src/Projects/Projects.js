@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Projects.css'
 import ArrowNav from '../ArrowNav/ArrowNav'
+import Project from '../Project/Project'
+import ProjectData from './ProjectData'
 
 class Projects extends Component {
   render () {
@@ -18,8 +20,12 @@ class Projects extends Component {
     return (
       <div className='projectsContainer'>
         <h1 className='projectsHeading'>Projects</h1>
-        <div className='projects' />
-        <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
+        <div className='projectsRow'>
+          <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
+          <div className='project'>
+            <Project data={ProjectData.project1} />
+          </div>
+        </div>
       </div>
     )
   }
