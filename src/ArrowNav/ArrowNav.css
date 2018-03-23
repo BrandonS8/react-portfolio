@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 400px;
+  margin-top: 15px;
 }
 .arrowNavLink{
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #fff;
-  padding: 5px;
 }
 .arrowNavLink:hover {
   text-decoration:none; 
@@ -18,15 +18,22 @@
 }
 .arrowNavLinkName{
   border: 2px solid #d32f2f;
+  border-right: none !important;
   border-radius: 10px 0px 0 10px;
   padding: 9px 10px;
   text-align: center;
   transition: 0.6s ease-in-out;
 }
-.arrowNavArrow {
-  height: 0;
-  border-top: 20px solid rgba(0,0,0,0);
-  border-left: 22px solid #d32f2f;
-  border-bottom: 20px solid rgba(0,0,0,0);
-  transition: 0.6s ease-in-out;
-}
+/* .arrowNavEffect{
+position: absolute;
+width: 0;
+height: 36px;
+border-radius: 10px 0px 0 10px;
+background: blue;
+display: block;
+z-index: -1;
+transition: 0.6s ease-in-out;
+} */
+/* .arrowNavLink:hover .arrowNavEffect{
+  width: 85px;
+} */

@@ -19,5 +19,34 @@ export default {
         color: '#1E88E5'
       }
     ]
+  },
+  project2: {
+    name: 'Townie',
+    img: 'https://camo.githubusercontent.com/c76039b6f3a2413db21b6f699c02e85dba4abc60/68747470733a2f2f692e696d6775722e636f6d2f615a4b4a6c42422e6a7067',
+    description: `Townie is a town building app, users can create their own houses with residents and put them into the towns.`,
+    deployed: 'https://townie-project.herokuapp.com/',
+    code: 'https://github.com/BrandonS8/project-2',
+    technologies: [
+      {
+        name: 'JavaScript',
+        color: '#FFCA28'
+      },
+      {
+        name: 'MongoDB',
+        color: '#d32f2f'
+      },
+      {
+        name: 'Express',
+        color: '#1E88E5'
+      },
+      {
+        name: 'Handlebars',
+        color: '#BA68C8'
+      },
+      {
+        name: 'Node',
+        color: '#43A047'
+      }
+    ]
   }
 }
