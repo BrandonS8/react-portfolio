@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
-
+import './About.css'
+import myFace from '../img/me.jpg'
 class About extends Component {
   render () {
     return (
       <div>
-        <h1>About</h1>
+        <div className='aboutTop'>
+          <img className='aboutImg' src={myFace} alt='pic of me' />
+          <div className='aboutNameContainer'>
+            <h2 className='firstName aboutName'>Brandon</h2>
+            <h2 className='lastName aboutName'>Sears</h2>
+          </div>
+        </div>
         <p>Brand statement and resume here</p>
+        <p>I am a Full Stack Web Developer that implements creative ideas to construct user friendly and functional applications. My goal-oriented way of thinking allows me to meet deadlines or goals in an efficient manner without sacrificing any functionality or user experiences.
+</p>
       </div>
     )
   }
