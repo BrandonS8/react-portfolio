@@ -34,7 +34,7 @@ class App extends Component {
         </main>
         <nav>
           <NavLink exact to='/' activeClassName='currentPage'>Home</NavLink>
-          <NavLink to='/projects' activeClassName='currentPage'>Projects</NavLink>
+          <NavLink to='/projects/project-1' activeClassName='currentPage'>Projects</NavLink>
           <NavLink to='/about' activeClassName='currentPage'>About</NavLink>
           <NavLink to='/contact' activeClassName='currentPage'>Contact</NavLink>
         </nav>

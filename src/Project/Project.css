@@ -9,6 +9,7 @@
   border: 6px solid #BA68C8;
   border-radius: 15px;
   max-width: 550px;
+  min-height: 500px;
 }
 .projectHeading{
   margin: 3px;
