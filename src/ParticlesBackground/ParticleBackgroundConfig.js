@@ -80,7 +80,7 @@ let Config = {
         'mode': 'grab'
       },
       'onclick': {
-        'enable': true,
+        'enable': false,
         'mode': 'push'
       },
       'resize': true

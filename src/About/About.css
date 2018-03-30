@@ -1,15 +1,21 @@
+.aboutContainer{
+  color: #fff;
+  width: 80%;
+  height: 80%;
+  overflow: scroll;
+}
 .aboutTop{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.3vw;
 }
 .aboutNameContainer{
   display: flex;
 }
 
 .aboutName{
-  font-size: 60px;
-  color: #fff;
+  font-size: 4vw;
   text-align: left;
   margin: 8px;
   padding: 0;
@@ -17,14 +23,20 @@
 
 
 .aboutImg {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 20%;
+  max-width: 20%;
   /* position: absolute;
   right: 0;
   top: 0; */
   border-radius: 50%;
   animation: roll-in 2s ease;
   animation-timing-function: linear;
+}
+
+.aboutFirst{
+  width: 100%;
+  height: 800px;
+  background: lightgoldenrodyellow;
 }
 
 @keyframes roll-in {

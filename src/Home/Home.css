@@ -8,13 +8,14 @@
 }
 .homeHeading{
   color: #fff;
-  font-size: 50px;
+  font-size: 6vw;
   margin: 0;
   padding: 0;
   animation: fade-in 2s ease-in;
 }
 .homeStatement{
   color: #fff;
+  font-size: 1.5vw;
   margin: 5px 0;
   padding: 0;
   animation: fade-in 4s ease-in, change-colors 25s ease-in-out infinite;

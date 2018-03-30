@@ -1,9 +1,10 @@
 .arrowNavContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   min-height: 400px;
+  min-width: 95px;
   margin-top: 15px;
 }
 .arrowNavLink{
@@ -11,29 +12,38 @@
   align-items: center;
   text-decoration: none;
   color: #fff;
+  margin-bottom: 5px;
 }
 .arrowNavLink:hover {
   text-decoration:none; 
   color:#fff; 
 }
 .arrowNavLinkName{
-  border: 2px solid #d32f2f;
+  font-size: 1.2vw;
+  border: 2px solid #BA68C8;
   border-right: none !important;
   border-radius: 10px 0px 0 10px;
   padding: 9px 10px;
   text-align: center;
   transition: 0.6s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
-/* .arrowNavEffect{
-position: absolute;
-width: 0;
-height: 36px;
-border-radius: 10px 0px 0 10px;
-background: blue;
-display: block;
-z-index: -1;
-transition: 0.6s ease-in-out;
-} */
-/* .arrowNavLink:hover .arrowNavEffect{
-  width: 85px;
-} */
+
+.arrowNavLinkName::before{
+  content: '';
+  background: #BA68C8;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s ease-in-out;
+  border-radius: 8px 0px 0 8px;
+  opacity: 0;
+  z-index: -1;
+}
+.arrowNavLinkName:hover::before{
+  width: 100%;
+  opacity: 1;
+}

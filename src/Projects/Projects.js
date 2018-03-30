@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import './Projects.css'
 import ArrowNav from '../ArrowNav/ArrowNav'
 import Project from '../Project/Project'
@@ -24,9 +24,10 @@ class Projects extends Component {
         <div className='projectsRow'>
           <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
           <div className='project'>
-          <Switch>
-              <Route path='/projects/project-1' render={() => <Project data={ProjectData.project1} /> }/>
-              <Route path='/projects/project-2' render={() => <Project data={ProjectData.project2} /> }/>
+            <Switch>
+              <Route path='/projects/project-1' render={() => <Project data={ProjectData.project1} />} />
+              <Route path='/projects/project-2' render={() => <Project data={ProjectData.project2} />} />
+              <Route path='/projects' render={() => <Redirect to='/projects/project-1' />} />
             </Switch>
           </div>
         </div>
