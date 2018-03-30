@@ -6,28 +6,45 @@ class About extends Component {
   constructor () {
     super()
     this.state = {
-      lastScrollPos: 0
+      lastScrollPos: 0,
+      item: 0
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
 
+// redo this using lastscrollpos to know if up or down then do the other stuff check for difference and stuff??
+
   handleScroll (e) {
-    if (this.state.lastScrollPos > e.target.scrollTop) {
-      this.setState({
-        lastScrollPos: e.target.scrollTop
-      })
-      console.log('up')
+    console.log(e.target.scrollTop)
+    if (e.target.scrollTop < 1201 && e.target.scrollTop > 250) {
+      if (this.state.item !== 1) {
+        console.log(e.target.scrollTop)
+        let item = this.state.item - 1
+        this.setState({
+          lastScrollPos: e.target.scrollTop,
+          item
+        })
+        console.log('up')
+        console.log(this.state)
+      }
+    } else if (e.target.scrollTop > 1200) {
+      if (this.state.item !== 2) {
+        let item = this.state.item + 1
+        this.setState({
+          lastScrollPos: e.target.scrollTop,
+          item
+        })
+        console.log('down')
+        console.log(this.state)
+      }
     } else {
-      this.setState({
-        lastScrollPos: e.target.scrollTop
-      })
-      console.log('down')
+      console.log(e.target.scrollTop)
     }
   }
 
   render () {
     return (
-      <div className='aboutContainer' onScroll={this.handleScroll}>>
+      <div className='aboutContainer' onScroll={this.handleScroll}>
         <div className='aboutTop'>
           <img className='aboutImg' src={myFace} alt='pic of me' />
           <div className='aboutNameContainer'>
@@ -37,7 +54,10 @@ class About extends Component {
         </div>
         <p>Brand statement and resume here</p>
         <p>I am a Full Stack Web Developer that implements creative ideas to construct user friendly and functional applications. My goal-oriented way of thinking allows me to meet deadlines or goals in an efficient manner without sacrificing any functionality or user experiences.</p>
-        <section className='aboutFirst'><h1>First</h1></section>
+        <div className='sections'>
+          <section className='aboutFirst' style={{opacity: this.state.item === 1 ? 1 : 0.5}}><h1>First</h1></section>
+          <section className='aboutSecond' style={{opacity: this.state.item === 2 ? 1 : 0.5}}><h1>Second</h1></section>
+        </div>
       </div>
     )
   }

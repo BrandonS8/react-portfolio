@@ -48,5 +48,35 @@ export default {
         color: '#43A047'
       }
     ]
+  },
+  project3: {
+    name: 'Starving Artist',
+    img: 'https://i.imgur.com/QOF4Nba.jpg',
+    description: `
+    Starving Artist is an app that allows users to upload artwork to sell. It is primarily targeted toward college students in art programs with a focus on the DC area. This was a group project at General Assembly.`,
+    deployed: 'https://starving-artist.surge.sh/',
+    code: 'https://github.com/BrandonS8/Starving_Artist_React',
+    technologies: [
+      {
+        name: 'JavaScript',
+        color: '#FFCA28'
+      },
+      {
+        name: 'MongoDB',
+        color: '#d32f2f'
+      },
+      {
+        name: 'Express',
+        color: '#1E88E5'
+      },
+      {
+        name: 'React',
+        color: '#BA68C8'
+      },
+      {
+        name: 'Node',
+        color: '#43A047'
+      }
+    ]
   }
 }

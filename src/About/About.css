@@ -32,11 +32,19 @@
   animation: roll-in 2s ease;
   animation-timing-function: linear;
 }
-
 .aboutFirst{
-  width: 100%;
+  flex: 1;
   height: 800px;
   background: lightgoldenrodyellow;
+  padding: 10px;
+  transition: all 1s ease-in-out;
+}
+.aboutSecond{
+  flex: 1;
+  height: 800px;
+  background: lightblue;
+  padding: 10px;
+  transition: all 1s ease-in-out;
 }
 
 @keyframes roll-in {

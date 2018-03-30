@@ -15,6 +15,10 @@ class Projects extends Component {
       {
         link: '/project-2',
         name: 'Project 2'
+      },
+      {
+        link: '/project-3',
+        name: 'Project 3'
       }
     ]
 
@@ -25,8 +29,10 @@ class Projects extends Component {
           <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
           <div className='project'>
             <Switch>
+              {/* make this use .map to make routes not like this!! */}
               <Route path='/projects/project-1' render={() => <Project data={ProjectData.project1} />} />
               <Route path='/projects/project-2' render={() => <Project data={ProjectData.project2} />} />
+              <Route path='/projects/project-3' render={() => <Project data={ProjectData.project3} />} />
               <Route path='/projects' render={() => <Redirect to='/projects/project-1' />} />
             </Switch>
           </div>

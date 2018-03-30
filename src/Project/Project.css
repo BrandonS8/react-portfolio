@@ -26,19 +26,22 @@
   padding: 0 10px;
   margin: 5px;
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
 }
 .projectTechnologies{
   display: flex;
   text-align: center;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
 }
 .projectTech{
-  padding: 4px;
+  padding: 6px;
   margin: 6px;
   border-radius: 10px;
   box-shadow: 3px 3px 10px -6px rgba(0,0,0,0.5);
   font-size: 1vw;
+  text-align: center;
 }
 .projectButtons{
   margin: 15px;
