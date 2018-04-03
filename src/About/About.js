@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './About.css'
 import myFace from '../img/me.jpg'
+import Resume from '../Resume/Resume'
 
 class About extends Component {
   constructor () {
@@ -15,31 +16,6 @@ class About extends Component {
 // redo this using lastscrollpos to know if up or down then do the other stuff check for difference and stuff??
 
   handleScroll (e) {
-    console.log(e.target.scrollTop)
-    if (e.target.scrollTop < 1201 && e.target.scrollTop > 250) {
-      if (this.state.item !== 1) {
-        console.log(e.target.scrollTop)
-        let item = this.state.item - 1
-        this.setState({
-          lastScrollPos: e.target.scrollTop,
-          item
-        })
-        console.log('up')
-        console.log(this.state)
-      }
-    } else if (e.target.scrollTop > 1200) {
-      if (this.state.item !== 2) {
-        let item = this.state.item + 1
-        this.setState({
-          lastScrollPos: e.target.scrollTop,
-          item
-        })
-        console.log('down')
-        console.log(this.state)
-      }
-    } else {
-      console.log(e.target.scrollTop)
-    }
   }
 
   render () {
@@ -52,9 +28,9 @@ class About extends Component {
             <h2 className='lastName aboutName'>Sears</h2>
           </div>
         </div>
-        <p>Brand statement and resume here</p>
         <p>I am a Full Stack Web Developer that implements creative ideas to construct user friendly and functional applications. My goal-oriented way of thinking allows me to meet deadlines or goals in an efficient manner without sacrificing any functionality or user experiences.</p>
         <div className='sections'>
+          <Resume />
           <section className='aboutFirst' style={{opacity: this.state.item === 1 ? 1 : 0.5}}><h1>First</h1></section>
           <section className='aboutSecond' style={{opacity: this.state.item === 2 ? 1 : 0.5}}><h1>Second</h1></section>
         </div>
