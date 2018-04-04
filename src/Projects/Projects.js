@@ -24,7 +24,7 @@ class Projects extends Component {
 
     return (
       <div className='projectsContainer'>
-        <h1 className='projectsHeading'>Projects</h1>
+        {/* <h1 className='projectsHeading'>Projects</h1> */}
         <div className='projectsRow'>
           <ArrowNav currentPath={this.props.location.pathname} links={projectLinks} />
           <div className='project'>

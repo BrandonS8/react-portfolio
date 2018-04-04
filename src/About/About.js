@@ -28,11 +28,11 @@ class About extends Component {
             <h2 className='lastName aboutName'>Sears</h2>
           </div>
         </div>
-        <p>I am a Full Stack Web Developer that implements creative ideas to construct user friendly and functional applications. My goal-oriented way of thinking allows me to meet deadlines or goals in an efficient manner without sacrificing any functionality or user experiences.</p>
+        <p className='aboutStatement'>I am a Full Stack Web Developer that implements creative ideas to construct user friendly and functional applications. My goal-oriented way of thinking allows me to meet deadlines or goals in an efficient manner without sacrificing any functionality or user experiences.</p>
         <div className='sections'>
           <Resume />
-          <section className='aboutFirst' style={{opacity: this.state.item === 1 ? 1 : 0.5}}><h1>First</h1></section>
-          <section className='aboutSecond' style={{opacity: this.state.item === 2 ? 1 : 0.5}}><h1>Second</h1></section>
+          {/* <section className='aboutFirst' style={{opacity: this.state.item === 1 ? 1 : 0.5}}><h1>First</h1></section> */}
+          {/* <section className='aboutSecond' style={{opacity: this.state.item === 2 ? 1 : 0.5}}><h1>Second</h1></section> */}
         </div>
       </div>
     )

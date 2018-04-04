@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-
+import './Resume.css'
 class Resume extends Component {
   render() {
     return (
       <div>
         <section>
-          <h1>Skills</h1>
+          <h1 className='sectionTitle'>Skills</h1>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -19,7 +19,7 @@ class Resume extends Component {
           </ul>
         </section>
         <section>
-          <h1>Web Development Experience</h1>
+          <h1 className='sectionTitle'>Web Development Experience</h1>
           <h2>Web Development Immersive Student at General Assembly</h2>
           <ul>
             <li>Completed an immersive thirteen week long full-stack web development course that covers a variety of languages’ fundamentals, front and back end frameworks, the development process and methods used in the web development field.</li>
@@ -27,7 +27,7 @@ class Resume extends Component {
           </ul>
         </section>
         <section>
-          <h1>Other Experience</h1>
+          <h1 className='sectionTitle'>Other Experience</h1>
           <h2>IT and Networking Student at Allegany County Center for Career and Technical Education</h2>
           <ul>
             <li>Completed multiple support requests daily.</li>
@@ -47,11 +47,11 @@ class Resume extends Component {
           </ul>
         </section>
         <section>
-          <h1>Education</h1>
-          <h1>General Assembly</h1>
-          <h2>Web Development Immersive</h2>
-          <h1>Center for Career and Technical Education</h1>
-          <h2>IT and Networking</h2>
+          <h1 className='sectionTitle'>Education</h1>
+          <h2>General Assembly</h2>
+          <h3>Web Development Immersive</h3>
+          <h2>Center for Career and Technical Education</h2>
+          <h3>IT and Networking</h3>
         </section>
       </div>
     )

@@ -3,6 +3,7 @@
   width: 80%;
   height: 80%;
   overflow: scroll;
+  padding: 20px;
 }
 .aboutTop{
   display: flex;
@@ -19,6 +20,10 @@
   text-align: left;
   margin: 8px;
   padding: 0;
+}
+
+.aboutStatement{
+  text-align: center;
 }
 
 
