@@ -1,3 +1,24 @@
-.email {
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #fff;
+}
+.contactContainer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vw;
+  transition: all 0.5s ease;
+}
+.contactContainer h1 {
+  font-size: 3vw;
+}
+.contactContainer a:hover {
+  color: #1e88e5;
+  transition: all 0.5s ease;
+}
+
+.contactIcon {
+  margin: 0 8px;
 }

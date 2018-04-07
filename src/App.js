@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Route, NavLink, Redirect, Switch} from 'react-router-dom'
+import { Route, NavLink, Redirect, Switch } from 'react-router-dom'
 import './App.css'
 import Home from './Home/Home'
 import Projects from './Projects/Projects'
@@ -8,7 +8,7 @@ import Contact from './Contact/Contact'
 import ParticlesBackground from './ParticlesBackground/ParticlesBackground'
 
 class App extends Component {
-  constructor (p) {
+  constructor(p) {
     super()
     this.state = {
       position: 0
@@ -20,23 +20,31 @@ class App extends Component {
   //   })
   // }
 
-  render () {
+  render() {
     return (
-      <div className='app'>
+      <div className="app">
         <main>
           <Switch>
-            <Route path='/contact' render={() => <Contact />} />
-            <Route path='/about' render={() => <About />} />
-            <Route path='/projects' render={(props) => <Projects {...props} />} />
+            <Route path="/contact" render={() => <Contact />} />
+            <Route path="/about" render={() => <About />} />
+            <Route path="/projects" render={props => <Projects {...props} />} />
             {/* make sure these are in order  */}
-            <Route path='/' render={() => <Home />} />
+            <Route path="/" render={() => <Home />} />
           </Switch>
         </main>
         <nav>
-          <NavLink exact to='/' activeClassName='currentPage'>Home</NavLink>
-          <NavLink to='/projects' activeClassName='currentPage'>Projects</NavLink>
-          <NavLink to='/about' activeClassName='currentPage'>About</NavLink>
-          <NavLink to='/contact' activeClassName='currentPage'>Contact</NavLink>
+          <NavLink exact to="/" activeClassName="currentPage">
+            Home
+          </NavLink>
+          <NavLink to="/projects" activeClassName="currentPage">
+            Projects
+          </NavLink>
+          <NavLink to="/about" activeClassName="currentPage">
+            About
+          </NavLink>
+          <NavLink to="/contact" activeClassName="currentPage">
+            Reach Me!
+          </NavLink>
         </nav>
         <ParticlesBackground />
       </div>
