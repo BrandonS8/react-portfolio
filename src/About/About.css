@@ -1,31 +1,30 @@
-.aboutContainer{
+.aboutContainer {
   color: #fff;
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 93%;
   overflow: scroll;
   padding: 20px;
 }
-.aboutTop{
+.aboutTop {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.3vw;
 }
-.aboutNameContainer{
+.aboutNameContainer {
   display: flex;
 }
 
-.aboutName{
+.aboutName {
   font-size: 4vw;
   text-align: left;
   margin: 8px;
   padding: 0;
 }
 
-.aboutStatement{
+.aboutStatement {
   text-align: center;
 }
-
 
 .aboutImg {
   max-height: 20%;
@@ -37,35 +36,21 @@
   animation: roll-in 2s ease;
   animation-timing-function: linear;
 }
-.aboutFirst{
-  flex: 1;
-  height: 800px;
-  background: lightgoldenrodyellow;
-  padding: 10px;
-  transition: all 1s ease-in-out;
-}
-.aboutSecond{
-  flex: 1;
-  height: 800px;
-  background: lightblue;
-  padding: 10px;
-  transition: all 1s ease-in-out;
-}
 
 @keyframes roll-in {
-0%{
-  transform: translateX(400%)
-}
-25%{
-  transform:  translateX(300%) rotate(-90deg) 
-}
-50%{
-  transform:  translateX(200%) rotate(-180deg) 
-}
-75%{
-  transform:  translateX(100%) rotate(-270deg)
-}
-100%{
-  transform:  translateX(0) rotate(-360deg)
-}
+  0% {
+    transform: translateX(400%);
+  }
+  25% {
+    transform: translateX(300%) rotate(-90deg);
+  }
+  50% {
+    transform: translateX(200%) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(100%) rotate(-270deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-360deg);
+  }
 }

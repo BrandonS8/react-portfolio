@@ -1,4 +1,4 @@
-.arrowNavContainer{
+.arrowNavContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -7,7 +7,7 @@
   min-width: 95px;
   margin-top: 15px;
 }
-.arrowNavLink{
+.arrowNavLink {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -15,12 +15,13 @@
   margin-bottom: 5px;
 }
 .arrowNavLink:hover {
-  text-decoration:none; 
-  color:#fff; 
+  text-decoration: none;
+  color: #fff;
 }
-.arrowNavLinkName{
+.arrowNavLinkName {
+  min-width: 80px;
   font-size: 1.2vw;
-  border: 2px solid #BA68C8;
+  border: 2px solid #ba68c8;
   border-right: none !important;
   border-radius: 10px 0px 0 10px;
   padding: 9px 10px;
@@ -30,9 +31,9 @@
   z-index: 1;
 }
 
-.arrowNavLinkName::before{
+.arrowNavLinkName::before {
   content: '';
-  background: #BA68C8;
+  background: #ba68c8;
   width: 0;
   height: 100%;
   position: absolute;
@@ -43,7 +44,7 @@
   opacity: 0;
   z-index: -1;
 }
-.arrowNavLinkName:hover::before{
+.arrowNavLinkName:hover::before {
   width: 100%;
   opacity: 1;
 }
