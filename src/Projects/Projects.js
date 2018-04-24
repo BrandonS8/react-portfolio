@@ -9,16 +9,20 @@ class Projects extends Component {
   render() {
     let projectLinks = [
       {
-        link: '/project-1',
-        name: 'Project 1'
+        link: '/hatermaker',
+        name: 'HATERMAKER'
       },
       {
-        link: '/project-2',
-        name: 'Project 2'
+        link: '/townie',
+        name: 'Townie'
       },
       {
-        link: '/project-3',
-        name: 'Project 3'
+        link: '/starving-artist',
+        name: 'Starving Artist'
+      },
+      {
+        link: '/freeyourbio',
+        name: '#FreeYourBio'
       },
       {
         link: '/p5-paint',
@@ -38,16 +42,20 @@ class Projects extends Component {
             <Switch>
               {/* make this use .map to make routes not like this!! */}
               <Route
-                path="/projects/project-1"
+                path="/projects/hatermaker"
                 render={() => <Project data={ProjectData.project1} />}
               />
               <Route
-                path="/projects/project-2"
+                path="/projects/townie"
                 render={() => <Project data={ProjectData.project2} />}
               />
               <Route
-                path="/projects/project-3"
+                path="/projects/starving-artist"
                 render={() => <Project data={ProjectData.project3} />}
+              />
+              <Route
+                path="/projects/freeyourbio"
+                render={() => <Project data={ProjectData.project4} />}
               />
               <Route
                 path="/projects/p5-paint"
@@ -55,7 +63,7 @@ class Projects extends Component {
               />
               <Route
                 path="/projects"
-                render={() => <Redirect to="/projects/project-1" />}
+                render={() => <Redirect to="/projects/hatermaker" />}
               />
             </Switch>
           </div>

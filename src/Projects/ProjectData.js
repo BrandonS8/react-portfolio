@@ -105,5 +105,23 @@ export default {
         color: '#1E88E5'
       }
     ]
+  },
+  project4: {
+    name: '#FreeYourBio',
+    img:
+      'https://camo.githubusercontent.com/fa477dbabfea52217c014b4f936bc61df1d780f6/68747470733a2f2f692e696d6775722e636f6d2f7a51624f4e35362e706e67',
+    description: `#FreeYourBio is a solution to social media profile bios being cluttered with usernames and links. #FreeYourBio lets you create your own page, with your own links and/or and embedded url, such as a YouTube video. Most social media websites have a spot for a single link, so if you put all your links onto that link...now you have a whole bio to write about yourself.`,
+    deployed: 'http://freeyourbio.com',
+    code: 'https://github.com/BrandonS8/FreeYourBio',
+    technologies: [
+      {
+        name: 'JavaScript',
+        color: '#FFCA28'
+      },
+      {
+        name: 'Ruby on Rails',
+        color: '#d32f2f'
+      }
+    ]
   }
 }
